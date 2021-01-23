@@ -2285,7 +2285,9 @@ class Form extends CI_Controller {
                 $data['uc_filter'] = (isset($map_view_settings->uc_filter)) ? $map_view_settings->uc_filter : '';
                 $data['map_type_filter'] = (isset($map_view_settings->map_type_filter)) ? $map_view_settings->map_type_filter : '';
                 $data['zoom_level'] = (isset($map_view_settings->default_zoom_level)) ? $map_view_settings->default_zoom_level : '';
-                $data['latitude'] = (isset($map_view_settings->default_latitude)) ? $map_view_settings->default_latitude : '';
+                $data['latitude'] = (isset($map_view_settings
+                ->default_latitude)) ? $map_view_settings
+                ->default_latitude : '';
                 $data['longitude'] = (isset($map_view_settings
                 ->default_longitude)) ? $map_view_settings
                 ->default_longitude : '';
