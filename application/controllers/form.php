@@ -2559,7 +2559,8 @@ class Form extends CI_Controller {
                                 $default_selected = '';
                             }
                             $print_val = str_replace("_", " ", $val);
-                            $filter_options .= "<option value='$val' $default_selected>$print_val</option>";
+                            $filter_options .= "<option value='$val' 
+                            $default_selected>$print_val</option>";
                         }
                     }
                 }
