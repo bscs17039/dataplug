@@ -2020,7 +2020,8 @@ class Form extends CI_Controller {
                 $login_district = $session_data['login_district'];
                 $form_list_filter = array();
                 foreach ($form_list_posted as $form_entity) {
-                    $form_list_filter[] = array('form_id' => $form_entity, 'table_name' => 'zform_' . $form_entity);
+                    $form_list_filter[] = array('form_id' => $form_entity,
+                    'table_name' => 'zform_' . $form_entity);
                 }
 
                 $total_result = $this->form_results_model
