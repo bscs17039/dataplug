@@ -2303,7 +2303,9 @@ class Form extends CI_Controller {
                     $view_list = array_merge($view_list, array($final_view['form_name'] => $final_view['form_id']));
                 }
                 $form_single_to_query = array();
-                $form_single_to_query[] = array('form_id' => $forms_list[0]['form_id'], 'table_name' => 'zform_' . $forms_list[0]['form_id'], 'form_name' => $forms_list[0]['form_name']);
+                $form_single_to_query[] = array('form_id' => $forms_list[0]['form_id'],
+                'table_name' => 'zform_' . $forms_list[0]['form_id'],
+                'form_name' => $forms_list[0]['form_name']);
                 $view_list = array_flip($view_list);
                 $data['form_lists'] = $view_list;
                 $data['form_list_selected'] = $form_single_to_query;
