@@ -2538,7 +2538,8 @@ class Form extends CI_Controller {
                     }
                 }
                 $data['selected_form'] = $first_form_id;
-                $data['locations'] = $this->getMapHtmlInfo($record_array_final, $heading_array, $filter_attribute);
+                $data['locations'] = $this->getMapHtmlInfo($record_array_final, 
+                $heading_array, $filter_attribute);
                 $town_lists = $this->app_users_model->get_towns($selected_form['app_id']);
                 $town_list_array = array();
                 foreach ($town_lists as $towns) {
