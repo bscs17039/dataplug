@@ -2256,7 +2256,8 @@ class Form extends CI_Controller {
 
                 $data['filter_options'] = $filter_options;
                 $all_visits_hidden = $this->input->post('all_visits_hidden');
-                $data['locations'] = $this->getMapHtmlInfo($record_array_final, $heading_array, $filter_attribute);
+                $data['locations'] = $this->getMapHtmlInfo($record_array_final,
+                $heading_array, $filter_attribute);
                 $data['all_visits_hidden'] = $all_visits_hidden;
                 $data['headings'] = $heading_array;
                 $data['form'] = $record_array_final;
