@@ -2269,7 +2269,9 @@ class Form extends CI_Controller {
                     uasort($record_array_final_filter, array(new SortAssociativeArray($filter_attribute_value), "call"));
                 }
 
-                $possible_filters_from_settings = $this->form_model->get_form_column_values($app_filter_list, $selected_form['id']);
+                $possible_filters_from_settings = $this->form_model->
+                get_form_column_values($app_filter_list,
+                $selected_form['id']);
 
                 $data['possible_filters_from_settings'] = $possible_filters_from_settings;
                 $data['dynamic_filters'] = $dynamic_filters;
