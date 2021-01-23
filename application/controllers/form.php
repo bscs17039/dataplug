@@ -2565,7 +2565,9 @@ class Form extends CI_Controller {
                 }
 
 
-                $possible_filters_from_settings = $this->form_model->get_form_column_values($app_filter_list, $first_form_id);
+                $possible_filters_from_settings = $this->form_model
+                ->get_form_column_values($app_filter_list, 
+                $first_form_id);
 
                 $data['possible_filters_from_settings'] = $possible_filters_from_settings;
 
