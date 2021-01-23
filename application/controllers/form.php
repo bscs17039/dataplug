@@ -2341,7 +2341,9 @@ class Form extends CI_Controller {
                 $login_district = $session_data['login_district'];
                 /** for categry listing* */
                 $record_array_final_filter = array();
-                $results_filer_main = $this->form_results_model->get_form_results_filters($form_single_to_query, $login_district);
+                $results_filer_main = $this->form_results_model
+                ->get_form_results_filters($form_single_to_query, 
+                $login_district);
                 $app_filters_array = array();
                 $town_array = array();
                 $uc_array = array();
