@@ -2578,7 +2578,8 @@ class Form extends CI_Controller {
                 $data['district_filter'] = !empty($map_view_settings->district_filter) ? $map_view_settings->district_filter : '';
                 $data['sent_by_filter'] = !empty($map_view_settings->sent_by_filter) ? $map_view_settings->sent_by_filter : '';
                 $data['uc_filter'] = !empty($map_view_settings->uc_filter) ? $map_view_settings->uc_filter : '';
-                $data['map_type_filter'] = (isset($map_view_settings->map_type_filter)) ? $map_view_settings->map_type_filter : '';
+                $data['map_type_filter'] = (isset($map_view_settings
+                ->map_type_filter)) ? $map_view_settings->map_type_filter : '';
                 $data['view_type'] = !empty($app_settings['map_type']) ? 
                 $app_settings['map_type'] : '';
                 $data['zoom_level'] = (isset($map_view_settings
