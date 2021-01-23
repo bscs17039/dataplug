@@ -2300,7 +2300,8 @@ class Form extends CI_Controller {
             } else {
                 $view_list = array();
                 foreach ($forms_list as $final_view) {
-                    $view_list = array_merge($view_list, array($final_view['form_name'] => $final_view['form_id']));
+                    $view_list = array_merge($view_list, 
+                    array($final_view['form_name'] => $final_view['form_id']));
                 }
                 $form_single_to_query = array();
                 $form_single_to_query[] = array('form_id' => $forms_list[0]['form_id'],
