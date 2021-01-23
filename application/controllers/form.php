@@ -2023,7 +2023,9 @@ class Form extends CI_Controller {
                     $form_list_filter[] = array('form_id' => $form_entity, 'table_name' => 'zform_' . $form_entity);
                 }
 
-                $total_result = $this->form_results_model->return_total_record_map_posted($form_list_filter, $to_date, $from_date);
+                $total_result = $this->form_results_model
+                ->return_total_record_map_posted($form_list_filter,
+                $to_date, $from_date);
                 $totalPages = ceil($total_result / $this->perMap);
                 $data['totalPages'] = $totalPages;
                 $filter_date_map = $this->input->post('filter_date_map');
