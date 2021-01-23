@@ -2543,7 +2543,8 @@ class Form extends CI_Controller {
                 $town_list_array = array();
                 foreach ($town_lists as $towns) {
                     if (!in_array($towns['town'], $town_list_array)) {
-                        $town_list_array = array_merge($town_list_array, array($towns['town'] => $towns['town']));
+                        $town_list_array = array_merge($town_list_array, 
+                        array($towns['town'] => $towns['town']));
                     }
                 }
                 $filter_options = '';
