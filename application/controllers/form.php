@@ -2240,7 +2240,7 @@ class Form extends CI_Controller {
                 $filter_result = get_map_view_settings($selected_form['app_id']);
                 if (isset($filter_result->filters->$form_id)) {
                     $app_filter_list = $filter_result->filters->$form_id;
-//                    $filter_options .= "<option value=''>Select One</option>";
+//                  $filter_options .= "<option value=''>Select One</option>";
                     if (!empty($app_filter_list)) {
                         foreach ($app_filter_list as $key => $val) {
                             $print_val = str_replace("_", " ", $val);
