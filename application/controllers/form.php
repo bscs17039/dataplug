@@ -2286,7 +2286,9 @@ class Form extends CI_Controller {
                 $data['map_type_filter'] = (isset($map_view_settings->map_type_filter)) ? $map_view_settings->map_type_filter : '';
                 $data['zoom_level'] = (isset($map_view_settings->default_zoom_level)) ? $map_view_settings->default_zoom_level : '';
                 $data['latitude'] = (isset($map_view_settings->default_latitude)) ? $map_view_settings->default_latitude : '';
-                $data['longitude'] = (isset($map_view_settings->default_longitude)) ? $map_view_settings->default_longitude : '';
+                $data['longitude'] = (isset($map_view_settings
+                ->default_longitude)) ? $map_view_settings
+                ->default_longitude : '';
                 $data['app_name'] = $selected_app['name'];
                 $data['form_for_filter'] = $record_array_final_filter;
                 $data['active_tab'] = 'app';
