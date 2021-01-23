@@ -2314,7 +2314,8 @@ class Form extends CI_Controller {
                 $data['form_name'] = $selected_form['name'];
                 $data['app_id'] = $selected_form['app_id'];
                 $app_settings = $this->app_model->get_app_settings($selected_form['app_id']);
-                $app_filter_list = explode(',', (isset($app_settings['map_view_filters'])?$app_settings['map_view_filters']:""));
+                $app_filter_list = explode(',', (isset($app_settings['map_view_filters'])
+                ?$app_settings['map_view_filters']:""));
                 $data['district_selected'] = "";
                 /** Get Multiple form filtesr* */
                 $multiple_filters = $this->form_model->get_form_filters($form_single_to_query);
