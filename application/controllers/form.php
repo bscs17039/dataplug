@@ -2460,7 +2460,8 @@ class Form extends CI_Controller {
                  * its call back function call
                  */
                 foreach ($filter_attribute as $filter_attribute_value) {
-                    uasort($record_array_final_filter, array(new SortAssociativeArray($filter_attribute_value), "call"));
+                    uasort($record_array_final_filter, 
+                    array(new SortAssociativeArray($filter_attribute_value), "call"));
                 }
                 $results_comined = array();
                 $record_array_final = array();
