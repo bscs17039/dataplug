@@ -2582,7 +2582,9 @@ class Form extends CI_Controller {
                 $data['view_type'] = !empty($app_settings['map_type']) ? $app_settings['map_type'] : '';
                 $data['zoom_level'] = (isset($map_view_settings->default_zoom_level)) ? $map_view_settings->default_zoom_level : '';
                 $data['latitude'] = (isset($map_view_settings->default_latitude)) ? $map_view_settings->default_latitude : '';
-                $data['longitude'] = (isset($map_view_settings->default_longitude)) ? $map_view_settings->default_longitude : '';
+                $data['longitude'] = (isset($map_view_settings
+                    ->default_longitude)) ? $map_view_settings
+                    ->default_longitude : '';
                 $data['app_name'] = $selected_app['name'];
                 $data['town_filter'] = $town_list_array;
                 $data['headings'] = $heading_array;
