@@ -2159,7 +2159,8 @@ class Form extends CI_Controller {
                 $data['uc'] = $uc_array;
                 $form_list_filter = array();
                 foreach ($form_list_posted as $form_entity) {
-                    $form_list_filter[] = array('form_id' => $form_entity, 'table_name' => 'zform_' . $form_entity);
+                    $form_list_filter[] = array('form_id' => $form_entity, 
+                    'table_name' => 'zform_' . $form_entity);
                 }
                 $results_comined_posted = array();
                 $record_array_final = array();
