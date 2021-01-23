@@ -2011,7 +2011,10 @@ class Form extends CI_Controller {
                     $data['selected_date_from'] = "";
                 }
                 if (strtotime($to_date) > strtotime($from_date)) {
-                    $this->session->set_flashdata('validate', array('message' => 'Invalid Date selection. From Date should be greater than To Date.', 'type' => 'warning'));
+                    $this->session->set_flashdata('validate', 
+                    array('message' => 'Invalid Date selection. 
+                    From Date should be greater than To Date.',
+                    'type' => 'warning'));
                     redirect(base_url() . 'application-map/' . $slug);
                 }
 
