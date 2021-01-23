@@ -2166,7 +2166,10 @@ class Form extends CI_Controller {
                 foreach ($form_list_filter as $form_entity) {
                     $table_name = $form_entity['table_name'];
                     $results = $this->form_results_model->get_map_data_paginated_posted($table_name, $to_date, $from_date, $town_filter = null, $posted_filters, $search_text, $login_district, $dynamic_filters);
-                    //$results = $this->form_results_model->get_form_results_for_map($forms_list, $to_date, $from_date, $town_filter = null, $posted_filters, $search_text, $login_district);
+                    //$results = $this->form_results_model
+                    //->get_form_results_for_map($forms_list, 
+                    //$to_date, $from_date, $town_filter = null, 
+                    //$posted_filters, $search_text, $login_district);
                     $results_comined_posted = array_merge($results_comined_posted, $results);
                 }
                 $filter_exist_array = array();
