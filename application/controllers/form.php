@@ -2511,7 +2511,8 @@ class Form extends CI_Controller {
                                     $exist_alpha[$first_char] = '1';
                                     $pin_name = $first_char . '1.png';
                                 }
-                                $pin_exist_for_cat = array_merge($pin_exist_for_cat, array($valueforarray => $pin_name));
+                                $pin_exist_for_cat = array_merge($pin_exist_for_cat, 
+                                array($valueforarray => $pin_name));
                             } else {
                                 if (array_key_exists($valueforarray, $pin_exist_for_cat)) {
                                     $pin_name = $pin_exist_for_cat[$valueforarray];
