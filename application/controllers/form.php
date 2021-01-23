@@ -2400,7 +2400,8 @@ class Form extends CI_Controller {
                                 $value = trim($value);
                                 $valueforarray = str_replace(' ', '_', $value);
 
-                                if (isset($map_saved_pins[$key][$valueforarray]) && $map_saved_pins[$key][$valueforarray] != '') {
+                                if (isset($map_saved_pins[$key][$valueforarray]) 
+                                && $map_saved_pins[$key][$valueforarray] != '') {
                                     $pin_name = $map_saved_pins[$key][$valueforarray];
                                 } else
                                 if (!in_array($valueforarray, $filter_exist_array)) {
