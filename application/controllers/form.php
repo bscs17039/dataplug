@@ -2280,7 +2280,9 @@ class Form extends CI_Controller {
                 $data['app_id'] = $selected_form['app_id'];
                 $selected_app = $this->app_model->get_app($selected_form['app_id']);
                 $app_settings = $this->app_model->get_app_settings($selected_form['app_id']);
-                $data['district_filter'] = (isset($map_view_settings->district_filter)) ? $map_view_settings->district_filter : '';
+                $data['district_filter'] = (isset($map_view_settings
+                ->district_filter)) ? $map_view_settings
+                ->district_filter : '';
                 $data['sent_by_filter'] = !empty($map_view_settings
                 ->sent_by_filter) ? $map_view_settings
                 ->sent_by_filter : '';
